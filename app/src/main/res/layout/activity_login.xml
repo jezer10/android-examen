@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:padding="36dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_upeu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_custom_input"
+            android:drawableStart="@drawable/ic_outline_account_circle_24"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/white"
+            android:hint="Usuario"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_custom_input"
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/white"
+            android:hint="Contraseña"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/white" />
+        <CheckBox
+            android:id="@+id/cb_login_save_credentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Credenciales"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+        <Button
+            android:id="@+id/btn_login_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_custom_button"
+            app:backgroundTint="@color/purple_200"
+            android:text="Log In" />
+
+        <Button
+            android:id="@+id/btn_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_custom_button"
+            android:text="Register"
+            app:backgroundTint="@color/teal_200"
+             />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
