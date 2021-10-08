@@ -19,20 +19,19 @@ import retrofit2.Response
 
 
 class RegisterActivity : AppCompatActivity() {
-    lateinit var btnBack: Button
-    lateinit var btnRegister: Button
-    lateinit var ibPasswordToggle: ImageButton
-    lateinit var ibConfirmPasswordToggle: ImageButton
-    lateinit var etUsername: EditText
-    lateinit var etFirstName: EditText
+    private lateinit var btnBack: Button
+    private lateinit var btnRegister: Button
+    private lateinit var ibPasswordToggle: ImageButton
+    private lateinit var ibConfirmPasswordToggle: ImageButton
+    private lateinit var etUsername: EditText
+    private lateinit var etFirstName: EditText
 
-    lateinit var etLastName: EditText
+    private lateinit var etLastName: EditText
 
-    lateinit var etPassword: EditText
-    lateinit var etConfirmPassword: EditText
+    private lateinit var etPassword: EditText
+    private lateinit var etConfirmPassword: EditText
 
-    lateinit var userService: UserService
-
+    private lateinit var userService: UserService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

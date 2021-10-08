@@ -10,7 +10,7 @@ interface UserService {
     fun getUsers():Call<List<UserModel>>
 
     @GET("users/{id}")
-    fun getUserById(@Path("id") id:Int) :Call<List<UserModel>>
+    fun getUserById(@Path("id") id:Int) :Call<UserModel>
 
     @POST("users")
     fun createUser(@Body userModel: UserModel):Call<UserModel>
@@ -20,7 +20,7 @@ interface UserService {
 
 
     @PUT("users/{id}")
-    fun updateUser(@Body userModel: UserModel):Call<UserModel>
+    fun updateUser(@Path("id") id:Int,@Body userModel: UserModel):Call<UserModel>
 
     @DELETE("users/{id}")
     fun deleteUser(@Path("id") id:Int):Call<UserModel>

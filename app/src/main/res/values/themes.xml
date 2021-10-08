@@ -16,5 +16,8 @@
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
+    <style name="ThemeOverlay_MaterialComponents_MaterialAlertDialog_FullWidthButtons" parent="Theme.MaterialComponents.Light.Dialog">
+
+    </style>
 </resources>
 
